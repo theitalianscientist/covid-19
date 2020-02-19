@@ -75,3 +75,8 @@ The data appears to have been manipulated.
 Now, there could potentially be a bug in the code. However, if you copy-n-paste the dataset in an online Benford calculator (like [this](https://www.dcode.fr/benford-law)), the result stay the same.  Benford’s law consistently points to manipulation.
 
 You’ve got to the end of the post. Congrats! If you think this post is interesting and should be read by others, please share it on social media. I am terrible at that. Thanks for reading!
+
+
+
+Edit: probably unrelated, but this github account has been flagged :)
+![flagged](Screen Shot 2020-02-18 at 8.35.51 PM.png)
