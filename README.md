@@ -79,4 +79,5 @@ You’ve got to the end of the post. Congrats! If you think this post is interes
 
 
 Edit: probably unrelated, but this github account has been flagged :)
-![flagged](Screen Shot 2020-02-18 at 8.35.51 PM.png)
+
+![flagged](https://raw.githubusercontent.com/theitalianscientist/covid-19/master/Screen%20Shot%202020-02-18%20at%208.35.51%20PM.png)
