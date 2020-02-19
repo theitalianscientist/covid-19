@@ -72,7 +72,7 @@ The data appears to have been manipulated.
 
 *This test is configured to give incorrect positive results in 5% of the cases at max. Datasets are sampled at random, the days that I remember to do it.*
 
-Now, there could potentially be a bug in the code. However, if you copy-n-paste the dataset in an online Benford calculator (like [this](https://www.dcode.fr/benford-law)), the result stay the same.  Benford’s law consistently points to manipulation.
+Now, there could potentially be a bug in the code. However, if you copy-n-paste the dataset in an online Benford calculator (like [this](https://www.dcode.fr/benford-law)), the result stay the same.  Benford’s law consistently points toward manipulation.
 
 You’ve got to the end of the post. Congrats! If you think this post is interesting and should be read by others, please share it on social media. I am terrible at that. Thanks for reading!
 
