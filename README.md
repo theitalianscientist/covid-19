@@ -1,7 +1,7 @@
 # Coronavirus - the manipulation
 
 
-[Bendford’s law](https://web.williams.edu/Mathematics/sjmiller/public_html/math/talks/Benford_Brown2012.pdf), in short, is a statistical test to check if a set of numbers describing some phenomenon (your tax return, a natural disaster, stock prices or traffic volume on the highway) has been manipulated.
+[Benford’s law](https://web.williams.edu/Mathematics/sjmiller/public_html/math/talks/Benford_Brown2012.pdf), in short, is a statistical test to check if a set of numbers describing some phenomenon (your tax return, a natural disaster, stock prices or traffic volume on the highway) has been manipulated.
 
 Its power comes from a mistake humans often do when making up numbers: they distribute the digits really nicely and evenly across the interval they want.
 For most normal unaltered datasets, though, this doesn’t actually happen. In fact, the leading digit of each number is much more likely to be a 1 (~30%) than a 9. There are many explanations for this behavior, and I encourage you to look it [up](https://en.wikipedia.org/wiki/Benford%27s_law), but the gist of it is that if your dataset doesn’t fit exactly in a specific order of magnitude but spills over to the next one, or just uses half of it, low numbers will be more likely to appear.
@@ -14,10 +14,10 @@ Let’s fix that. What you’ll find is that China has been delightfully truthfu
 
 Just kidding.
 
-So, first things first. The assumptions to use this statistical tests ARE (copied straight from this [fantastic blog](https://towardsdatascience.com/frawd-detection-using-benfords-law-python-code-9db8db474cf8), which you should read):
+So, first things first. The assumptions to use this statistical test are (copied straight from this [fantastic blog](https://towardsdatascience.com/frawd-detection-using-benfords-law-python-code-9db8db474cf8), which you should read):
 
 * The numbers need to be random and not assigned, with no imposed minimums or maximums.
-* The numbers should cover several orders of magnitude, and the datasetshould be large; recommendations in the literature call for 100 to 1,000 samples as a minimum, though Benford’s law has been shown to hold true for datasets containing as few as 50 numbers.
+* The numbers should cover several orders of magnitude, and the dataset should be large; recommendations in the literature call for 100 to 1,000 samples as a minimum, though Benford’s law has been shown to hold true for datasets containing as few as 50 numbers.
  
  
 We’re in luck! We have datasets that satisfy those assumptions, and they come straight from Chinese websites.
@@ -46,14 +46,32 @@ Benford law applies (if the source of numbers is 'good', e.g., a natural phenome
 Chi-squared Test Statistic = 33.350
 Critical value at a P-value of 0.05 is 15.51.
 The data appears to have been manipulated.
+########################
+Dataset name: dataset_qq_02_18.txt
+Min value in dataset: 0
+Max value in dataset: 61682
+Dataset size: 312
+Benford law applies (if the source of numbers is 'good', e.g., a natural phenomenon).
+
+Chi-squared Test Statistic = 17.694
+Critical value at a P-value of 0.05 is 15.51.
+The data appears to have been manipulated.
+########################
+Dataset name: dataset_dxy_02_18.txt
+Min value in dataset: 1
+Max value in dataset: 75200
+Dataset size: 1470
+Benford law applies (if the source of numbers is 'good', e.g., a natural phenomenon).
+
+Chi-squared Test Statistic = 34.919
+Critical value at a P-value of 0.05 is 15.51.
+The data appears to have been manipulated.
 ```
 
 ***Both datasets appear to be manipulated**. Think about that. 
 
 *This test is configured to give incorrect positive results in 5% of the cases at max.*
 
-Now, here’s the caveat: this is only data from one day. I’ll be monitoring the data from future reports, to see if this changes. Unfortunately, I have been doing this for about a week (without, damn me, saving the datasets), and the results are consistently pointing toward `MANIPULATION`.
-
-There could also be a bug in the code. However, if you copy-n-paste the dataset in an online Benford calculator (like [this](https://www.dcode.fr/benford-law)), the result stay the same. One dataset gets a P value of `0.000011267`, and the other of `0.0293229`. For both, the Benford’s law points to manipulation.
+Now, there could potentially be a bug in the code. However, if you copy-n-paste the dataset in an online Benford calculator (like [this](https://www.dcode.fr/benford-law)), the result stay the same.  Benford’s law consistently points to manipulation.
 
 You’ve got to the end of the post. Congrats! If you think this post is interesting and should be read by others, please share it on social media. I am terrible at that. Thanks for reading!
