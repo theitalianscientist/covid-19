@@ -68,9 +68,9 @@ Critical value at a P-value of 0.05 is 15.51.
 The data appears to have been manipulated.
 ```
 
-***Both datasets appear to be manipulated**. Think about that. 
+**All datasets so far appear to be manipulated**. Think about that. 
 
-*This test is configured to give incorrect positive results in 5% of the cases at max.*
+*This test is configured to give incorrect positive results in 5% of the cases at max. Datasets are sampled at random, the days that I remember to do it.*
 
 Now, there could potentially be a bug in the code. However, if you copy-n-paste the dataset in an online Benford calculator (like [this](https://www.dcode.fr/benford-law)), the result stay the same.  Benford’s law consistently points to manipulation.
 
