@@ -2,7 +2,7 @@
 # QQ Dataset
 [url](https://news.qq.com/zt2020/page/feiyan.htm?from=timeline&isappinstalled=0)
 
-Extracted via js with
+After opening all the folds, extracted via js with
 ```
 // Areas
 
@@ -15,4 +15,4 @@ Extracted via js with
 # DXY Dataset
 [url](https://ncov.dxy.cn/ncovh5/view/pneumonia)
 
-Extracted by copy-pasting the city breakdown (below the fold).
+Extracted by copy-pasting the city breakdown (below the fold). You need to open up all the folds first.
