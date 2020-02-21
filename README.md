@@ -66,6 +66,16 @@ Benford law applies (if the source of numbers is 'good', e.g., a natural phenome
 Chi-squared Test Statistic = 34.919
 Critical value at a P-value of 0.05 is 15.51.
 The data appears to have been manipulated.
+########################
+Dataset name: dataset_dxy_02_21.txt
+Min value in dataset: 1
+Max value in dataset: 62662
+Dataset size: 1387
+Benford law applies (if the source of numbers is 'good', e.g., a natural phenomenon).
+
+Chi-squared Test Statistic = 42.195
+Critical value at a P-value of 0.05 is 15.51.
+The data appears to have been manipulated.
 ```
 
 **All datasets so far appear to be manipulated**. Think about that. 
